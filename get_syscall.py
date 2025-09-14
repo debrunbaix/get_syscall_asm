@@ -39,6 +39,8 @@ def print_syscall_for_arch(arch_name: str, syscall_name: str):
                     print(f"    {convention['return']} : {value}\n")
                 if key == "arg0" and value:
                     print(f"    {convention['arg0']} : {value}")
+                if key == "arg1" and value:
+                    print(f"    {convention['arg1']} : {value}")
                 if key == "arg2" and value:
                     print(f"    {convention['arg2']} : {value}")
                 if key == "arg3" and value:
